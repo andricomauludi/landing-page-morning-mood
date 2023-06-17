@@ -24,7 +24,7 @@ function IndexHeader() {
 
   return (
     <>
-      <div className="page-header clear-filter" filter-color="blue">
+      <div className="page-header clear-filter" filter-color={{"color":"#000080"}}>
         <div
           className="page-header-image"
           style={{
@@ -37,7 +37,7 @@ function IndexHeader() {
             <img
               alt="..."
               className="n-logo"
-              src={require("assets/img/logo-morning-mood.png")}
+              src={require("assets/img/now-logo.png")}
             ></img>
             <h1 className="h1-seo">Morning Mood</h1>
             <h3>All About Chicken and Coffee</h3>

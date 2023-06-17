@@ -28,7 +28,6 @@ import CoffeeSection from "./index-sections/CoffeeSection.js";
 import SandwichSection from "./index-sections/SandwichSection.js";
 import CardCoffee from "./index-sections/CardCoffee.js";
 import CardSandwich from "./index-sections/CardSandwich.js";
-import CarouselCustomer from "./index-sections/CarouselCustomer.js";
 
 function Index() {
   React.useEffect(() => {
@@ -53,7 +52,7 @@ function Index() {
           <CardCoffee />
           <SandwichSection />
           <CardSandwich />
-          <CarouselCustomer />
+          <Carousel />
           <BasicElements />
           <Navbars />
           <Tabs />
