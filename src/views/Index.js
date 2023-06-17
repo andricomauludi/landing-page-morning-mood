@@ -48,11 +48,11 @@ function Index() {
       <div className="wrapper">
         <IndexHeader />
         <div className="main">
-          {/* <Images /> */}
-          <CoffeeSection />
-          <CardCoffee />
+          <Images />
           <SandwichSection />
           <CardSandwich />
+          <CoffeeSection />
+          <CardCoffee />
           <CarouselCustomer />
           <Download />
         </div>
