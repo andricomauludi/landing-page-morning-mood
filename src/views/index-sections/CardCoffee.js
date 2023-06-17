@@ -15,7 +15,7 @@ import {
 
 function CardCoffee() {
   return (
-    <div className="section" style={{ "background-color": "#FDF502" }}>
+    <div className="section">
       <Container>
         <Row>
           <Col>

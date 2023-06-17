@@ -7,7 +7,7 @@ import { Button, Container, Row, Col } from "reactstrap";
 function CoffeeSection() {
   return (
     <>
-      <div className="section" style={{"background-color":"#FDF502"}}>
+      <div className="section" >
         <Container>
           <Row>
             <Col lg="6" md="12">

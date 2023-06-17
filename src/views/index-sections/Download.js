@@ -10,7 +10,7 @@ function Download() {
     <>
       <div
         className="section section-download"
-        data-background-color="black"
+        style={{"background-color":"#00005A"}}
         id="download-section"
       >
         <Container>

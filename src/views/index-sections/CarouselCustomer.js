@@ -55,7 +55,7 @@ function CarouselCustomer() {
   };
   return (
     <>
-      <div className="section" id="carousel" style={{"background-color":"#FDF502"}}>
+      <div className="section" id="carousel">
         <Container>
           <div className="title">
             <h4>Customer</h4>

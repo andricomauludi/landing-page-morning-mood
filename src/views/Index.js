@@ -54,17 +54,6 @@ function Index() {
           <SandwichSection />
           <CardSandwich />
           <CarouselCustomer />
-          <BasicElements />
-          <Navbars />
-          <Tabs />
-          <Pagination />
-          <Notifications />
-          <Typography />
-          <Javascript />
-          <Carousel />
-          <CompleteExamples />
-          <SignUp />
-          <Examples />
           <Download />
         </div>
         <DarkFooter />
