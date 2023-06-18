@@ -58,25 +58,26 @@ function CarouselCustomer() {
       <div
         className="section"
         id="carousel"
-        style={{
-          backgroundImage: "url(" + require("assets/img/sandwich1.jpg") + ")",
-        }}
+        // style={{
+        //   backgroundImage: "url(" + require("assets/img/sandwich1.jpg") + ")",
+        // }}
+          style={{ "background-color": "#FDFD95" }}
       >
         <Container>
           <div
-            className="title rounded img-raised"
-            style={{ "background-color": "#00005A" }}
+            // className="title rounded img-raised"
+            // style={{ "background-color": "#00005A" }}
           >
             <Row className="justify-content-center">
              
-              <Col lg="3" md="12">
-                <h1 style={{ padding: "20px", color:"#FFFFFF" }}>Customer</h1>
-              </Col>
+              
+                <h2 style={{ color:"#00005A", fontStyle:"italic", "fontWeight":"bold"}}>#SahabatMorningMood</h2>
+           
               
             </Row>
           </div>
           <Row className="justify-content-center">
-            <Col lg="8" md="12">
+            <Col lg="6" md="12">
               <Carousel
                 activeIndex={activeIndex}
                 next={next}

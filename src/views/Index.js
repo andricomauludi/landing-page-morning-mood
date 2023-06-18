@@ -43,8 +43,8 @@ function Index() {
           <CoffeeSection />
           <CardCoffee />
           <CarouselCustomer />
-          <Download />
-          <Navbars />
+          {/* <Download /> */}
+          {/* <Navbars /> */}
         </div>
         <DarkFooter />
       </div>

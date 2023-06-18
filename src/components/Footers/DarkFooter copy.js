@@ -6,7 +6,7 @@ import { Container } from "reactstrap";
 
 function DarkFooter() {
   return (
-    <footer className="footer" style={{ "background-color": "#F0B90A" }}>
+    <footer className="footer" data-background-color="black">
       <Container>
         <nav>
           <ul>
@@ -15,7 +15,7 @@ function DarkFooter() {
                 href="https://www.creative-tim.com?ref=nukr-dark-footer"
                 target="_blank"
               >
-                <b>Contact Us</b>
+                Creative Tim
               </a>
             </li>
             <li>
@@ -23,7 +23,7 @@ function DarkFooter() {
                 href="http://presentation.creative-tim.com?ref=nukr-dark-footer"
                 target="_blank"
               >
-                <b>About Us</b>
+                About Us
               </a>
             </li>
             <li>
@@ -31,25 +31,27 @@ function DarkFooter() {
                 href="http://blog.creative-tim.com?ref=nukr-dark-footer"
                 target="_blank"
               >
-                <b>Location</b>
+                Blog
               </a>
             </li>
           </ul>
         </nav>
         <div className="copyright" id="copyright">
-          <b>
-            © 2023 Morning Mood{" "}
-            <a
-              href="https://www.invisionapp.com?ref=nukr-dark-footer"
-              target="_blank"
-            ></a>
-            | All rights reserved
-            <a
-              href="https://www.creative-tim.com?ref=nukr-dark-footer"
-              target="_blank"
-            ></a>
-            .
-          </b>
+          © {new Date().getFullYear()}, Designed by{" "}
+          <a
+            href="https://www.invisionapp.com?ref=nukr-dark-footer"
+            target="_blank"
+          >
+            Invision
+          </a>
+          . Coded by{" "}
+          <a
+            href="https://www.creative-tim.com?ref=nukr-dark-footer"
+            target="_blank"
+          >
+            Creative Tim
+          </a>
+          .
         </div>
       </Container>
     </footer>

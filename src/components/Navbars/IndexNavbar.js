@@ -55,7 +55,7 @@ function IndexNavbar() {
       <Navbar
         className={"fixed-top " + navbarColor}
         expand="lg"
-        style={{ "background-color": "#00005A"}}
+        style={{ "background-color": "#F0B90A" }}
       >
         <Container>
           <Collapse
@@ -64,25 +64,61 @@ function IndexNavbar() {
             navbar
           >
             <Container>
-            <Nav navbar style={{"display":"block"}}>
-              <Row style={{display: 'flex',  justifyContent:'center', alignItems:'center', marginLeft: "auto", alignSelf:"center" }}>
-                <Col lg="4" style={{display: 'flex',  justifyContent:'center', alignItems:'center', marginLeft: "auto", alignSelf:"center" }}>
-                  <NavbarBrand
-                    href="https://demos.creative-tim.com/now-ui-kit-react/#/index?ref=nukr-index-navbar"
-                    target="_blank"
-                    id="navbar-brand"
+              <Nav navbar style={{ display: "block" }}>
+                <Row
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    marginLeft: "auto",
+                    alignSelf: "center",
+                  }}
+                >
+                  <Col
+                    lg="4"
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      marginLeft: "auto",
+                      alignSelf: "center",
+                    }}
                   >
-                    Morning Mood
-                  </NavbarBrand>
-                </Col>
-                <Col lg="4" style={{display: 'flex',  justifyContent:'center', alignItems:'center', marginLeft: "auto", alignSelf:"center" }}>
-                  <img
-                    style={{ "max-height": "80px" }}
-                    alt="..."
-                    src={require("assets/img/logo-morning-mood.png")}
-                  ></img>
-                </Col>
-                <Col lg="4" style={{display: 'flex',  justifyContent:'center', alignItems:'center', marginLeft: "auto", alignSelf:"center" }}>
+                    <b>
+                      <h4>Our Menu</h4>
+                    </b>
+                  </Col>
+                  <Col
+                    lg="4"
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      marginLeft: "auto",
+                      alignSelf: "center",
+                    }}
+                  >
+                    <img
+                      style={{ "max-height": "80px" }}
+                      alt="..."
+                      src={require("assets/img/logo-morning-mood.png")}
+                    ></img>
+                  </Col>
+                  <Col
+                    lg="4"
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      marginLeft: "auto",
+                      alignSelf: "center",
+                    }}
+                  >
+                    <b>
+                      <h4>About Us</h4>
+                    </b>
+                  </Col>
+                  {/* <Col lg="3" style={{display: 'flex',  justifyContent:'center', alignItems:'center', marginLeft: "auto", alignSelf:"center" }}>
                   <Row>
                   <NavItem>
                     <NavLink
@@ -125,10 +161,10 @@ function IndexNavbar() {
                   </NavItem>
 
                   </Row>
-                </Col>
-              </Row>
-            </Nav>
-              </Container>
+                </Col> */}
+                </Row>
+              </Nav>
+            </Container>
           </Collapse>
         </Container>
       </Navbar>
