@@ -7,7 +7,7 @@ import {
   Col,
   Carousel,
   CarouselItem,
-  CarouselIndicators
+  CarouselIndicators,
 } from "reactstrap";
 
 // core components
@@ -27,7 +27,7 @@ const items = [
     src: require("assets/img/customer3.jpg"),
     // altText: "Yellowstone National Park, United States",
     // caption: "Yellowstone National Park, United States"
-  }
+  },
 ];
 
 function CarouselCustomer() {
@@ -55,10 +55,25 @@ function CarouselCustomer() {
   };
   return (
     <>
-      <div className="section" id="carousel">
+      <div
+        className="section"
+        id="carousel"
+        style={{
+          backgroundImage: "url(" + require("assets/img/sandwich1.jpg") + ")",
+        }}
+      >
         <Container>
-          <div className="title">
-            <h4>Customer</h4>
+          <div
+            className="title rounded img-raised"
+            style={{ "background-color": "#00005A" }}
+          >
+            <Row className="justify-content-center">
+             
+              <Col lg="3" md="12">
+                <h1 style={{ padding: "20px", color:"#FFFFFF" }}>Customer</h1>
+              </Col>
+              
+            </Row>
           </div>
           <Row className="justify-content-center">
             <Col lg="8" md="12">

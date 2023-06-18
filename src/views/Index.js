@@ -54,6 +54,7 @@ function Index() {
           <CoffeeSection />
           <CardCoffee />
           <CarouselCustomer />
+          {/* <Navbars /> */}
           <Download />
         </div>
         <DarkFooter />
