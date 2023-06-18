@@ -8,13 +8,16 @@ import { Container, Row, Col } from "reactstrap";
 function Images() {
   return (
     <>
-      <div className="section section-images" style={{ "background-color": "#FDFD95","margin-bottom":"-250px"}}>
+      <div className="section section-images" style={{ "background-color": "#FDFD95","margin-bottom":"-500px"}}>
         <Container>
           <Row>
-            <Col md="12">
-              <div className="hero-images-container justify-content-end">
+              <Col md="3">
+                
+              </Col>
+            <Col md="6">
+              <div className="hero-images-container">
                 <img
-                  style={{"max-height":"500px","margin-left":"300px"}}
+                  style={{"max-height":"300px", display: 'flex',  justifyContent:'center', alignItems:'center',marginRight: "auto",  marginLeft: "auto", alignSelf:"center" }}
                   alt="..."
                   src={require("assets/img/logo-morning-mood.png")}
                 ></img>
@@ -26,12 +29,17 @@ function Images() {
                   src={require("assets/img/kopi3.png")}
                 ></img>
               </div> */}
-              <div className="hero-images-container-2">
+              {/* <div className="hero-images-container-2">
                 <img
+                  style={{display: 'flex',  justifyContent:'center', alignItems:'center', marginLeft: "auto", alignSelf:"center" }}
+
                   alt="..."
                   src={require("assets/img/kopi3.png")}
                 ></img>
-              </div>
+              </div> */}
+            </Col>
+            <Col md="3">
+              
             </Col>
           </Row>
         </Container>

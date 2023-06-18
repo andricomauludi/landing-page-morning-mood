@@ -33,7 +33,7 @@ function IndexHeader() {
           ref={pageHeader}
         ></div>
         <Container>
-          <div className="content-center brand">
+          {/* <div className="content-center brand">
             <img
               alt="..."
               className="n-logo"
@@ -42,7 +42,7 @@ function IndexHeader() {
             <h1 className="h1-seo">Morning Mood</h1>
             <h3>All About Chicken and Coffee</h3>
           </div>
-         
+          */}
         </Container>
       </div>
     </>
