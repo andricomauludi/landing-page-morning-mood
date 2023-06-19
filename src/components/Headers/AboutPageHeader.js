@@ -30,31 +30,17 @@ function AboutPageHeader() {
         <div
           className="page-header-image"
           style={{
-            backgroundImage: "url(" + require("assets/img/bg5.jpg") + ")"
+            backgroundImage: "url(" + require("assets/img/logo-morning-mood.png") + ")"
           }}
           ref={pageHeader}
         ></div>
-        <Container>
-          {/* <div className="photo-container">
-            <img alt="..." src={require("assets/img/ryan.jpg")}></img>
-          </div> */}
-          <h3 className="title">About Us</h3>
-          {/* <p className="category">Photographer</p> */}
-          {/* <div className="content">
-            <div className="social-description">
-              <h2>26</h2>
-              <p>Comments</p>
+         <Container>
+            <h1
+            style={{color:"#FDF502"}}
+            className="title">About Us</h1>
+            <div className="text-center">            
             </div>
-            <div className="social-description">
-              <h2>26</h2>
-              <p>Comments</p>
-            </div>
-            <div className="social-description">
-              <h2>48</h2>
-              <p>Bookmarks</p>
-            </div>
-          </div> */}
-        </Container>
+          </Container>
       </div>
     </>
   );

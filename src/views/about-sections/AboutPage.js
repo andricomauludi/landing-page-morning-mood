@@ -11,13 +11,14 @@ import {
   Container,
   Row,
   Col,
-  UncontrolledTooltip
+  UncontrolledTooltip,
 } from "reactstrap";
 
 // core components
 import DefaultFooter from "components/Footers/DefaultFooter.js";
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import AboutPageHeader from "components/Headers/AboutPageHeader";
+import DarkFooter from "components/Footers/DarkFooter";
 
 function AboutPage() {
   const [pills, setPills] = React.useState("2");
@@ -37,186 +38,104 @@ function AboutPage() {
       <IndexNavbar />
       <div className="wrapper">
         <AboutPageHeader />
-        <div className="section">
+        <div
+          className="section section-about-us"
+          style={{ backgroundColor: "#00005A" }}
+        >
           <Container>
-            <div className="button-container">
-              <Button className="btn-round" color="info" size="lg">
-                Follow
-              </Button>
-              <Button
-                className="btn-round btn-icon"
-                color="default"
-                id="tooltip515203352"
-                size="lg"
-              >
-                <i className="fab fa-twitter"></i>
-              </Button>
-              <UncontrolledTooltip delay={0} target="tooltip515203352">
-                Follow me on Twitter
-              </UncontrolledTooltip>
-              <Button
-                className="btn-round btn-icon"
-                color="default"
-                id="tooltip340339231"
-                size="lg"
-              >
-                <i className="fab fa-instagram"></i>
-              </Button>
-              <UncontrolledTooltip delay={0} target="tooltip340339231">
-                Follow me on Instagram
-              </UncontrolledTooltip>
-            </div>
-            <h3 className="title">About me</h3>
-            <h5 className="description">
-              An artist of considerable range, Ryan — the name taken by
-              Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs
-              and records all of his own music, giving it a warm, intimate feel
-              with a solid groove structure. An artist of considerable range.
-            </h5>
             <Row>
-              <Col className="ml-auto mr-auto" md="6">
-                <h4 className="title text-center">My Portfolio</h4>
-                <div className="nav-align-center">
-                  <Nav
-                    className="nav-pills-info nav-pills-just-icons"
-                    pills
-                    role="tablist"
-                  >
-                    <NavItem>
-                      <NavLink
-                        className={pills === "1" ? "active" : ""}
-                        href="#pablo"
-                        onClick={(e) => {
-                          e.preventDefault();
-                          setPills("1");
-                        }}
-                      >
-                        <i className="now-ui-icons design_image"></i>
-                      </NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink
-                        className={pills === "2" ? "active" : ""}
-                        href="#pablo"
-                        onClick={(e) => {
-                          e.preventDefault();
-                          setPills("2");
-                        }}
-                      >
-                        <i className="now-ui-icons location_world"></i>
-                      </NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink
-                        className={pills === "3" ? "active" : ""}
-                        href="#pablo"
-                        onClick={(e) => {
-                          e.preventDefault();
-                          setPills("3");
-                        }}
-                      >
-                        <i className="now-ui-icons sport_user-run"></i>
-                      </NavLink>
-                    </NavItem>
-                  </Nav>
-                </div>
+              <Col className="ml-auto mr-auto text-center" md="8">
+                <h2 className="title" style={{ color: "#FDF502" }}>
+                  Who we are?
+                </h2>
+                <h5 style={{ color: "#FFFFFF" }} className="description">
+                  According to the National Oceanic and Atmospheric
+                  Administration, Ted, Scambos, NSIDClead scentist, puts the
+                  potentially record low maximum sea ice extent tihs year down
+                  to low ice extent in the Pacific and a late drop in ice extent
+                  in the Barents Sea.
+                </h5>
               </Col>
-              <TabContent className="gallery" activeTab={"pills" + pills}>
-                <TabPane tabId="pills1">
-                  <Col className="ml-auto mr-auto" md="10">
-                    <Row className="collections">
-                      <Col md="6">
-                        <img
-                          alt="..."
-                          className="img-raised"
-                          src={require("assets/img/bg1.jpg")}
-                        ></img>
-                        <img
-                          alt="..."
-                          className="img-raised"
-                          src={require("assets/img/bg3.jpg")}
-                        ></img>
-                      </Col>
-                      <Col md="6">
-                        <img
-                          alt="..."
-                          className="img-raised"
-                          src={require("assets/img/bg8.jpg")}
-                        ></img>
-                        <img
-                          alt="..."
-                          className="img-raised"
-                          src={require("assets/img/bg7.jpg")}
-                        ></img>
-                      </Col>
-                    </Row>
-                  </Col>
-                </TabPane>
-                <TabPane tabId="pills2">
-                  <Col className="ml-auto mr-auto" md="10">
-                    <Row className="collections">
-                      <Col md="6">
-                        <img
-                          alt="..."
-                          className="img-raised"
-                          src={require("assets/img/bg6.jpg")}
-                        ></img>
-                        <img
-                          alt="..."
-                          className="img-raised"
-                          src={require("assets/img/bg11.jpg")}
-                        ></img>
-                      </Col>
-                      <Col md="6">
-                        <img
-                          alt="..."
-                          className="img-raised"
-                          src={require("assets/img/bg7.jpg")}
-                        ></img>
-                        <img
-                          alt="..."
-                          className="img-raised"
-                          src={require("assets/img/bg8.jpg")}
-                        ></img>
-                      </Col>
-                    </Row>
-                  </Col>
-                </TabPane>
-                <TabPane tabId="pills3">
-                  <Col className="ml-auto mr-auto" md="10">
-                    <Row className="collections">
-                      <Col md="6">
-                        <img
-                          alt="..."
-                          className="img-raised"
-                          src={require("assets/img/bg3.jpg")}
-                        ></img>
-                        <img
-                          alt="..."
-                          className="img-raised"
-                          src={require("assets/img/bg8.jpg")}
-                        ></img>
-                      </Col>
-                      <Col md="6">
-                        <img
-                          alt="..."
-                          className="img-raised"
-                          src={require("assets/img/bg7.jpg")}
-                        ></img>
-                        <img
-                          alt="..."
-                          className="img-raised"
-                          src={require("assets/img/bg6.jpg")}
-                        ></img>
-                      </Col>
-                    </Row>
-                  </Col>
-                </TabPane>
-              </TabContent>
             </Row>
+            <div className="separator separator-primary"></div>
+            <div className="section-story-overview">
+              <Row>
+                <Col md="6">
+                  <div
+                    className="image-container image-left"
+                    style={{
+                      backgroundImage:
+                        "url(" + require("assets/img/login.jpg") + ")",
+                    }}
+                  >
+                    <p className="blockquote blockquote-info"
+                    style={{ color: "#FFFFFF" }}>
+                      "Over the span of the satellite record, Arctic sea ice has
+                      been declining significantly, while sea ice in the
+                      Antarctichas increased very slightly" <br></br>
+                      <br></br>
+                      <small>-NOAA</small>
+                    </p>
+                  </div>
+                  <div
+                    className="image-container"
+                    style={{
+                      backgroundImage:
+                        "url(" + require("assets/img/bg3.jpg") + ")",
+                    }}
+                  ></div>
+                </Col>
+                <Col md="5">
+                  <div
+                    className="image-container image-right"
+                    style={{
+                      backgroundImage:
+                        "url(" + require("assets/img/bg1.jpg") + ")",
+                    }}
+                  ></div>
+                  <h3
+                  style={{ color: "#FFFFFF" }}>
+                    So what does the new record for the lowest level of winter
+                    ice actually mean
+                  </h3>
+                  <p
+                  style={{ color: "#FFFFFF" }}>
+                    The Arctic Ocean freezes every winter and much of the
+                    sea-ice then thaws every summer, and that process will
+                    continue whatever happens with climate change. Even if the
+                    Arctic continues to be one of the fastest-warming regions of
+                    the world, it will always be plunged into bitterly cold
+                    polar dark every winter. And year-by-year, for all kinds of
+                    natural reasons, there’s huge variety of the state of the
+                    ice.
+                  </p>
+                  <p
+                  style={{ color: "#FFFFFF" }}>
+                    For a start, it does not automatically follow that a record
+                    amount of ice will melt this summer. More important for
+                    determining the size of the annual thaw is the state of the
+                    weather as the midnight sun approaches and temperatures
+                    rise. But over the more than 30 years of satellite records,
+                    scientists have observed a clear pattern of decline,
+                    decade-by-decade.
+                  </p>
+                  <p
+                  style={{ color: "#FFFFFF" }}>
+                    The Arctic Ocean freezes every winter and much of the
+                    sea-ice then thaws every summer, and that process will
+                    continue whatever happens with climate change. Even if the
+                    Arctic continues to be one of the fastest-warming regions of
+                    the world, it will always be plunged into bitterly cold
+                    polar dark every winter. And year-by-year, for all kinds of
+                    natural reasons, there’s huge variety of the state of the
+                    ice.
+                  </p>
+                </Col>
+              </Row>
+            </div>
           </Container>
         </div>
-        <DefaultFooter />
+        <DarkFooter />
       </div>
     </>
   );
