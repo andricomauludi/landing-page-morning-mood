@@ -10,26 +10,26 @@ import IndexHeader from "components/Headers/IndexHeader.js";
 import DarkFooter from "components/Footers/DarkFooter.js";
 
 // sections for this page
-import Images from "./index-sections/Images.js";
-import BasicElements from "./index-sections/BasicElements.js";
-import Navbars from "./index-sections/Navbars2.js";
-import Tabs from "./index-sections/Tabs.js";
-import Pagination from "./index-sections/Pagination.js";
-import Notifications from "./index-sections/Notifications.js";
-import Typography from "./index-sections/Typography.js";
-import Javascript from "./index-sections/Javascript.js";
-import Carousel from "./index-sections/Carousel.js";
-import NucleoIcons from "./index-sections/CoffeeSection.js";
-import CompleteExamples from "./index-sections/CompleteExamples.js";
-import SignUp from "./index-sections/SignUp.js";
-import Examples from "./index-sections/Examples.js";
-import Download from "./index-sections/Download.js";
-import CoffeeSection from "./index-sections/CoffeeSection.js";
-import SandwichSection from "./index-sections/SandwichSection.js";
-import CardCoffee from "./index-sections/CardCoffee.js";
-import CardSandwich from "./index-sections/CardSandwich.js";
+import Images from "../index-sections/Images.js";
+import BasicElements from "../index-sections/BasicElements.js";
+import Navbars from "../index-sections/Navbars2.js";
+import Tabs from "../index-sections/Tabs.js";
+import Pagination from "../index-sections/Pagination.js";
+import Notifications from "../index-sections/Notifications.js";
+import Typography from "../index-sections/Typography.js";
+import Javascript from "../index-sections/Javascript.js";
+import Carousel from "../index-sections/Carousel.js";
+import NucleoIcons from "../index-sections/CoffeeSection.js";
+import CompleteExamples from "../index-sections/CompleteExamples.js";
+import SignUp from "../index-sections/SignUp.js";
+import Examples from "../index-sections/Examples.js";
+import Download from "../index-sections/Download.js";
+import CoffeeSection from "../index-sections/CoffeeSection.js";
+import SandwichSection from "../index-sections/SandwichSection.js";
+import CardCoffee from "../index-sections/CardCoffee.js";
+import CardSandwich from "../index-sections/CardSandwich.js";
 
-function Index() {
+function IndexExample() {
   React.useEffect(() => {
     document.body.classList.add("index-page");
     document.body.classList.add("sidebar-collapse");
@@ -72,4 +72,4 @@ function Index() {
   );
 }
 
-export default Index;
+export default IndexExample;

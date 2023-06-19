@@ -7,7 +7,7 @@ import { Button, Container, Row, Col } from "reactstrap";
 function SandwichSection() {
   return (
     <>
-      <div className="section" style={{"background-color":"#FDFD95"}}>
+      <div className="section">
         <Container>
           <Row>
             <Col lg="6" md="12">

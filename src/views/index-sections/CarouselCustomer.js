@@ -61,7 +61,6 @@ function CarouselCustomer() {
         // style={{
         //   backgroundImage: "url(" + require("assets/img/sandwich1.jpg") + ")",
         // }}
-          style={{ "background-color": "#FDFD95" }}
       >
         <Container>
           <div

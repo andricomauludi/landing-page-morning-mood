@@ -6,7 +6,7 @@ import { Container } from "reactstrap";
 
 function DarkFooter() {
   return (
-    <footer className="footer" style={{ "background-color": "#F0B90A" }}>
+    <footer className="footer" style={{ "background-color": "#F0F08D" }}>
       <Container>
         <nav>
           <ul>

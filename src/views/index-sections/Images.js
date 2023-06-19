@@ -8,7 +8,7 @@ import { Container, Row, Col } from "reactstrap";
 function Images() {
   return (
     <>
-      <div className="section section-images" style={{ "background-color": "#FDFD95","margin-bottom":"-500px"}}>
+      <div className="section section-images" style={{marginBottom:"-500px"}}>
         <Container>
           <Row>
               <Col md="3">

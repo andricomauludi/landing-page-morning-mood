@@ -55,7 +55,7 @@ function IndexNavbar() {
       <Navbar
         className={"fixed-top " + navbarColor}
         expand="lg"
-        style={{ "background-color": "#F0B90A" }}
+        style={{ "background-color": "#F0F08D" }}
       >
         <Container>
           <Collapse
@@ -84,9 +84,11 @@ function IndexNavbar() {
                       alignSelf: "center",
                     }}
                   >
-                    <b>
-                      <h4>Our Menu</h4>
-                    </b>
+                      <a href="/menu" id="menu-navbar">
+                    <h4>
+                        Our Menu
+                    </h4>
+                      </a>
                   </Col>
                   <Col
                     lg="4"
@@ -98,11 +100,15 @@ function IndexNavbar() {
                       alignSelf: "center",
                     }}
                   >
-                    <img
-                      style={{ "max-height": "80px" }}
-                      alt="..."
-                      src={require("assets/img/logo-morning-mood.png")}
-                    ></img>
+                    <a
+                    href="/index"
+                    >
+                      <img
+                        style={{ "max-height": "80px" }}
+                        alt="..."
+                        src={require("assets/img/logo-morning-mood.png")}
+                      ></img>
+                    </a>
                   </Col>
                   <Col
                     lg="4"
@@ -114,9 +120,14 @@ function IndexNavbar() {
                       alignSelf: "center",
                     }}
                   >
-                    <b>
-                      <h4>About Us</h4>
-                    </b>
+                      <a
+                        href="/aboutus"
+                        >
+                        <h4>
+                        About Us
+                    </h4>
+                      </a>
+                    <NavItem></NavItem>
                   </Col>
                   {/* <Col lg="3" style={{display: 'flex',  justifyContent:'center', alignItems:'center', marginLeft: "auto", alignSelf:"center" }}>
                   <Row>

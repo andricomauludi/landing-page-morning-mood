@@ -15,7 +15,7 @@ import {
 
 function CardSandwich() {
   return (
-    <div className="section" style={{ "background-color": "#FDFD95" }}>
+    <div className="section">
       <Container>
         <Row>
           <Col>

@@ -30,6 +30,9 @@ import NucleoIcons from "views/NucleoIcons.js";
 import LoginPage from "views/examples/LoginPage.js";
 import LandingPage from "views/examples/LandingPage.js";
 import ProfilePage from "views/examples/ProfilePage.js";
+import MenuPage from "views/menu-sections/MenuPage";
+import AboutPage from "views/about-sections/AboutPage";
+import IndexExample from "views/examples/IndexExample";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -37,6 +40,9 @@ root.render(
   <BrowserRouter>
     <Routes>
       <Route path="/index" element={<Index />} />
+      <Route path="/indexExample" element={<IndexExample />} />
+      <Route path="/menu" element={<MenuPage />} />
+      <Route path="/aboutus" element={<AboutPage />} />
       <Route path="/nucleo-icons" element={<NucleoIcons />} />
       <Route path="/landing-page" element={<LandingPage />} />
       <Route path="/profile-page" element={<ProfilePage />} />
