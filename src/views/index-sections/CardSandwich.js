@@ -19,7 +19,7 @@ function CardSandwich() {
       <Container>
         <Row>
           <Col>
-            <Card style={{ width: "20rem" }}>
+            <Card style={{}}>
               <CardImg
                 alt="..."
                 className="rounded img-raised"
@@ -43,7 +43,7 @@ function CardSandwich() {
             </Card>
           </Col>
           <Col>
-            <Card style={{ width: "20rem" }}>
+            <Card>
               <CardImg
                 alt="..."
                 className="rounded img-raised"
@@ -67,7 +67,7 @@ function CardSandwich() {
             </Card>
           </Col>
           <Col>
-            <Card style={{ width: "20rem" }}>
+            <Card>
               <CardImg
                 alt="..."
                 className="rounded img-raised"

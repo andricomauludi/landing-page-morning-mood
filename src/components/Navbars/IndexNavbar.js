@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useLocation } from 'react-router-dom'
 // reactstrap components
 import {
   Button,
@@ -20,20 +21,48 @@ import {
 } from "reactstrap";
 
 function IndexNavbar() {
+  const location = useLocation();
+  console.log(location.pathname);
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
+  const [wordColor, setWordColor] = React.useState("#FDF502");
+  const [logoDisplay, setLogoDisplay] = React.useState("hidden");
   const [collapseOpen, setCollapseOpen] = React.useState(false);
   React.useEffect(() => {
     const updateNavbarColor = () => {
-      if (
-        document.documentElement.scrollTop > 399 ||
-        document.body.scrollTop > 399
-      ) {
-        setNavbarColor("");
-      } else if (
-        document.documentElement.scrollTop < 400 ||
-        document.body.scrollTop < 400
-      ) {
-        setNavbarColor("navbar-transparent");
+      if (location.pathname=="/index") {
+        if (
+          document.documentElement.scrollTop > 899 ||
+          document.body.scrollTop > 899
+        ) {
+          setNavbarColor("");
+          setWordColor("#00005A");
+          setLogoDisplay("visible");
+        } else if (
+          document.documentElement.scrollTop < 900 ||
+          document.body.scrollTop < 900
+        ) {
+          setNavbarColor("navbar-transparent");
+          setLogoDisplay("hidden");
+          setWordColor("#FDF502");
+        }
+        
+      }else{        
+        if (
+          document.documentElement.scrollTop > 299 ||
+          document.body.scrollTop > 299
+        ) {
+          setNavbarColor("");
+          setWordColor("#00005A");
+          setLogoDisplay("visible");
+        } else if (
+          document.documentElement.scrollTop < 300 ||
+          document.body.scrollTop < 300
+        ) {
+          setNavbarColor("navbar-transparent");
+          setLogoDisplay("visible");
+          setWordColor("#FDF502");
+        }
+
       }
     };
     window.addEventListener("scroll", updateNavbarColor);
@@ -55,7 +84,7 @@ function IndexNavbar() {
       <Navbar
         className={"fixed-top " + navbarColor}
         expand="lg"
-        style={{ "background-color": "#F0F08D" }}
+        style={{ backgroundColor: "#F0F08D" }}
       >
         <Container>
           <Collapse
@@ -84,11 +113,9 @@ function IndexNavbar() {
                       alignSelf: "center",
                     }}
                   >
-                      <a href="/menu" id="menu-navbar">
-                    <h4>
-                        Our Menu
-                    </h4>
-                      </a>
+                    <a href="/menu" id="menu-navbar">
+                      <h4 style={{ color: wordColor }}>Our Menu</h4>
+                    </a>
                   </Col>
                   <Col
                     lg="4"
@@ -100,11 +127,9 @@ function IndexNavbar() {
                       alignSelf: "center",
                     }}
                   >
-                    <a
-                    href="/index"
-                    >
+                    <a href="/index">
                       <img
-                        style={{ "max-height": "80px" }}
+                        style={{ maxHeight: "80px" ,"visibility":logoDisplay}}
                         alt="..."
                         src={require("assets/img/logo-morning-mood.png")}
                       ></img>
@@ -120,13 +145,11 @@ function IndexNavbar() {
                       alignSelf: "center",
                     }}
                   >
-                      <a
-                        href="/aboutus"
-                        >
-                        <h4>
-                        About Us
-                    </h4>
-                      </a>
+                    <a href="/aboutus">
+                      <h4
+                      style={{color:wordColor}}
+                      >About Us</h4>
+                    </a>
                     <NavItem></NavItem>
                   </Col>
                   {/* <Col lg="3" style={{display: 'flex',  justifyContent:'center', alignItems:'center', marginLeft: "auto", alignSelf:"center" }}>

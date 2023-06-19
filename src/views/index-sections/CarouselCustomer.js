@@ -15,18 +15,18 @@ import {
 const items = [
   {
     src: require("assets/img/customer1.jpg"),
-    // altText: "Nature, United States",
-    // caption: "Nature, United States"
+    altText: "#SahabatMorningMood",
+    caption: "#SahabatMorningMood"
   },
   {
     src: require("assets/img/customer2.jpg"),
-    // altText: "Somewhere Beyond, United States",
-    // caption: "Somewhere Beyond, United States"
+    altText: "#SahabatMorningMood",
+    caption: "#SahabatMorningMood"
   },
   {
     src: require("assets/img/customer3.jpg"),
-    // altText: "Yellowstone National Park, United States",
-    // caption: "Yellowstone National Park, United States"
+    altText: "#SahabatMorningMood",
+    caption: "#SahabatMorningMood"
   },
 ];
 
@@ -76,7 +76,7 @@ function CarouselCustomer() {
             </Row>
           </div>
           <Row className="justify-content-center">
-            <Col lg="6" md="12">
+            <Col lg="8" md="12">
               <Carousel
                 activeIndex={activeIndex}
                 next={next}

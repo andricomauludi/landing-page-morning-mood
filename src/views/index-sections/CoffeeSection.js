@@ -7,7 +7,7 @@ import { Button, Container, Row, Col } from "reactstrap";
 function CoffeeSection() {
   return (
     <>
-      <div className="section" >
+      <div className="section">
         <Container>
           <Row>
             <Col lg="6" md="12">
@@ -19,34 +19,24 @@ function CoffeeSection() {
                 sure you check all of them and use those that you like the most.
               </h5>
               <Button
-                className="btn-round mr-1"
-                color="info"
+                className="btn-round btn-main mr-1"
+                style={{ backgroundColor: "#00005A" }}
                 href="/nucleo-icons"
                 size="lg"
                 target="_blank"
               >
-                View Demo Icons
-              </Button>
-              <Button
-                className="btn-round"
-                color="info"
-                href="https://nucleoapp.com/?ref=1712"
-                outline
-                size="lg"
-                target="_blank"
-              >
-                View All Icons
+                <span style={{ color: "#FDF502" }}>View Our Coffee Menus</span>
               </Button>
             </Col>
             <Col lg="6" md="12">
               <div className="icons-container">
-              <div className="hero-images-container">
-                <img
-                  alt="..."
-                  className="rounded img-raised"
-                  src={require("assets/img/header-kopi.jpg")}
-                ></img>
-              </div>
+                <div className="hero-images-container">
+                  <img
+                    alt="..."
+                    className="rounded img-raised"
+                    src={require("assets/img/header-kopi.jpg")}
+                  ></img>
+                </div>
               </div>
             </Col>
           </Row>

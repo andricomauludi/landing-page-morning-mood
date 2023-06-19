@@ -39,9 +39,9 @@ function Index() {
         <div className="main">
           <Images />
           <SandwichSection />
-          <CardSandwich />
+          {/* <CardSandwich /> */}
           <CoffeeSection />
-          <CardCoffee />
+          {/* <CardCoffee /> */}
           <CarouselCustomer />
           {/* <Download /> */}
           {/* <Navbars /> */}

@@ -1869,6 +1869,7 @@ fieldset[disabled] .btn-success.active {
   color: #ffffff;
   box-shadow: none;
 }
+
 .btn-info:hover {
   box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.17);
 }

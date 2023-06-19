@@ -31,22 +31,16 @@ function SandwichSection() {
               </h5>
               <Button
                 className="btn-round mr-1"
-                color="info"
-                href="/nucleo-icons"
+                style={{backgroundColor:"#00005A"}}                
+                href="/menu"
                 size="lg"
                 target="_blank"
+              ><span
+              style={{"color":"#FDF502"}}
               >
-                View Demo Icons
-              </Button>
-              <Button
-                className="btn-round"
-                color="info"
-                href="https://nucleoapp.com/?ref=1712"
-                outline
-                size="lg"
-                target="_blank"
-              >
-                View All Icons
+
+                View Our Sandwich Menus
+              </span>
               </Button>
             </Col>
           </Row>
