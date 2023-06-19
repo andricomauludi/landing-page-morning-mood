@@ -53,7 +53,7 @@ function MenuPage() {
                   <img
                     alt="..."
                     style={{ height: "300px", width: "auto" }}
-                    src={require("assets/img/sandwich1.jpg")}
+                    src={require("assets/img/sandwich2.png")}
                   ></img>
                   <h1 style={{"color":"#00005A"}}>
                     Sandwich
@@ -86,7 +86,7 @@ function MenuPage() {
                   <img
                     alt="..."
                     style={{ height: "300px", width: "auto" }}
-                    src={require("assets/img/sandwich1.jpg")}
+                    src={require("assets/img/ricebowl1.png")}
                   ></img>
                   <h1>
                     Chicken Rice

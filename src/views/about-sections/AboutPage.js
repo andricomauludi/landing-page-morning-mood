@@ -46,7 +46,7 @@ function AboutPage() {
             <Row>
               <Col className="ml-auto mr-auto text-center" md="8">
                 <h2 className="title" style={{ color: "#FDF502" }}>
-                  Who we are?
+                  Who we are
                 </h2>
                 <h5 style={{ color: "#FFFFFF" }} className="description">
                   According to the National Oceanic and Atmospheric
@@ -65,7 +65,7 @@ function AboutPage() {
                     className="image-container image-left"
                     style={{
                       backgroundImage:
-                        "url(" + require("assets/img/login.jpg") + ")",
+                        "url(" + require("assets/img/header-kopi2.jpg") + ")",
                     }}
                   >
                     <p className="blockquote blockquote-info"
@@ -81,7 +81,7 @@ function AboutPage() {
                     className="image-container"
                     style={{
                       backgroundImage:
-                        "url(" + require("assets/img/bg3.jpg") + ")",
+                        "url(" + require("assets/img/ricebowl1.png") + ")",
                     }}
                   ></div>
                 </Col>
@@ -90,7 +90,7 @@ function AboutPage() {
                     className="image-container image-right"
                     style={{
                       backgroundImage:
-                        "url(" + require("assets/img/bg1.jpg") + ")",
+                        "url(" + require("assets/img/sandwich1.jpg") + ")",
                     }}
                   ></div>
                   <h3
