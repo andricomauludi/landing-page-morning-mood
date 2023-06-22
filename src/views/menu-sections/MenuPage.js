@@ -13,17 +13,26 @@ import {
 } from "reactstrap";
 
 // core components
-import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
+
 import MenuPageHeader from "components/Headers/MenuPageHeader";
-import DefaultFooter from "components/Footers/DefaultFooter.js";
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
-import CardSandwich from "views/index-sections/CardSandwich";
 import DarkFooter from "components/Footers/DarkFooter";
+import { connect, useSelector } from "react-redux";
+import TableComponent from "components/Widgets/TableComponent";
+import { useDispatch } from 'react-redux';
+import { getProductLists } from "../../actions/productAction";
+import users from "reducers/users";
+
 
 function MenuPage() {
+  const dispatch = useDispatch();
+  const data = useSelector(state => state.users); // Assuming 'counter' is a state property in Redux
+  console.log(data)
+  
   const [firstFocus, setFirstFocus] = React.useState(false);
   const [lastFocus, setLastFocus] = React.useState(false);
   React.useEffect(() => {
+    dispatch(getProductLists());
     document.body.classList.add("landing-page");
     document.body.classList.add("sidebar-collapse");
     document.documentElement.classList.remove("nav-open");
@@ -50,6 +59,9 @@ function MenuPage() {
                 // style={{width:"500px",height:"500px", backgroundColor:"#F0F08D"}}
                 className="btn-menu"
                 >
+                  <h1>mantab
+                    {data.getProductLists.nama_product}
+                  </h1>
                   <img
                     alt="..."
                     style={{ height: "300px", width: "auto" }}
@@ -95,6 +107,8 @@ function MenuPage() {
               </Col>
             </Row>
             <div className="separator separator-primary"></div>
+
+            {/* <TableComponent /> */}
             
           </Container>
         </div>
@@ -105,4 +119,4 @@ function MenuPage() {
   );
 }
 
-export default MenuPage;
+export default connect()(MenuPage);

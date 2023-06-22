@@ -34,21 +34,25 @@ import MenuPage from "views/menu-sections/MenuPage";
 import AboutPage from "views/about-sections/AboutPage";
 import IndexExample from "views/examples/IndexExample";
 
+import { Provider } from "react-redux";
+import { store } from "reducers/rootreducers";
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
-  <BrowserRouter>
-    <Routes>
-      <Route path="/index" element={<Index />} />
-      <Route path="/indexExample" element={<IndexExample />} />
-      <Route path="/menu" element={<MenuPage />} />
-      <Route path="/aboutus" element={<AboutPage />} />
-      <Route path="/nucleo-icons" element={<NucleoIcons />} />
-      <Route path="/landing-page" element={<LandingPage />} />
-      <Route path="/profile-page" element={<ProfilePage />} />
-      <Route path="/login-page" element={<LoginPage />} />
-
-      <Route path="*" element={<Navigate to="/index" replace />} />
-    </Routes>
-  </BrowserRouter>
+  <Provider store={store}>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/index" element={<Index />} />
+        <Route path="/indexExample" element={<IndexExample />} />
+        <Route path="/menu" element={<MenuPage />} />
+        <Route path="/aboutus" element={<AboutPage />} />
+        <Route path="/nucleo-icons" element={<NucleoIcons />} />
+        <Route path="/landing-page" element={<LandingPage />} />
+        <Route path="/profile-page" element={<ProfilePage />} />
+        <Route path="/login-page" element={<LoginPage />} />
+        <Route path="*" element={<Navigate to="/index" replace />} />
+      </Routes>
+    </BrowserRouter>
+  </Provider>
 );

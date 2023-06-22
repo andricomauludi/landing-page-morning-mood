@@ -18,8 +18,10 @@ import CardCoffee from "./index-sections/CardCoffee.js";
 import CardSandwich from "./index-sections/CardSandwich.js";
 import CarouselCustomer from "./index-sections/CarouselCustomer.js";
 import Navbars from "./index-sections/Navbars.js";
+import { getProductLists } from '../actions/productAction.js';
 
 function Index() {
+
   React.useEffect(() => {
     document.body.classList.add("index-page");
     document.body.classList.add("sidebar-collapse");
