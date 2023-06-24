@@ -14,7 +14,7 @@ import {
 
 // core components
 
-import MenuPageHeader from "components/Headers/MenuPageHeader";
+import SandwichHeader from "components/Headers/SandwichHeader";
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import DarkFooter from "components/Footers/DarkFooter";
 import { connect, useSelector } from "react-redux";
@@ -23,7 +23,7 @@ import { useDispatch } from "react-redux";
 import { getProductLists } from "../../actions/productAction";
 import users from "reducers/users";
 
-function MenuPage() {
+function SandwichMenu() {
   const dispatch = useDispatch();
   const data = useSelector((state) => state.users); // Assuming 'counter' is a state property in Redux
   console.log(data);
@@ -46,7 +46,7 @@ function MenuPage() {
     <>
       <IndexNavbar />
       <div className="wrapper">
-        <MenuPageHeader />
+        <SandwichHeader />
         <div
           style={{ backgroundColor: "#00005A" }}
           className="section section-about-us"
@@ -104,4 +104,4 @@ function MenuPage() {
   );
 }
 
-export default connect()(MenuPage);
+export default connect()(SandwichMenu);

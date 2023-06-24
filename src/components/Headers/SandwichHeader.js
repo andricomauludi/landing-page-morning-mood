@@ -5,7 +5,7 @@ import { Button, Container } from "reactstrap";
 
 // core components
 
-function MenuPageHeader() {
+function SandwichHeader() {
   let pageHeader = React.createRef();
 
   React.useEffect(() => {
@@ -27,7 +27,7 @@ function MenuPageHeader() {
         <div
           className="page-header-image"
           style={{
-            backgroundImage: "url(" + require("assets/img/sandwich1.jpg") + ")"
+            backgroundImage: "url(" + require("assets/img/sandwich3.jpeg") + ")"
           }}
           ref={pageHeader}
         ></div>
@@ -35,7 +35,7 @@ function MenuPageHeader() {
           <Container>
             <h1
             style={{color:"#FDF502", fontSize:"100px", alignItems:"center"}}
-            className="title">Our Menu</h1>
+            className="title">Sandwiches</h1>
             <div className="text-center">            
             </div>
           </Container>
@@ -44,5 +44,4 @@ function MenuPageHeader() {
     </>
   );
 }
-
-export default MenuPageHeader;
+export default SandwichHeader;

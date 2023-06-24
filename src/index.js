@@ -36,6 +36,7 @@ import IndexExample from "views/examples/IndexExample";
 
 import { Provider } from "react-redux";
 import { store } from "reducers/rootreducers";
+import SandwichMenu from "views/menu-sections/SandwichMenu";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -46,6 +47,7 @@ root.render(
         <Route path="/index" element={<Index />} />
         <Route path="/indexExample" element={<IndexExample />} />
         <Route path="/menu" element={<MenuPage />} />
+        <Route path="/menu/sandwich" element={<SandwichMenu />} />
         <Route path="/aboutus" element={<AboutPage />} />
         <Route path="/nucleo-icons" element={<NucleoIcons />} />
         <Route path="/landing-page" element={<LandingPage />} />
