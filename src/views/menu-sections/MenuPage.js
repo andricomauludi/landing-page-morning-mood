@@ -55,7 +55,7 @@ function MenuPage() {
           <Container>
             <Row className="ml-auto mr-auto text-center">
               <Col md="5">
-                <Button
+                <div
                   // style={{width:"500px",height:"500px", backgroundColor:"#F0F08D"}}
                   className="btn-menu"
                 >
@@ -67,11 +67,11 @@ function MenuPage() {
                     ></img>
                     <h1 style={{ color: "#00005A" }}>Sandwich</h1>
                   </a>
-                </Button>
+                </div>
               </Col>
               <Col md="2"></Col>
               <Col md="5">
-                <Button className="btn-menu">
+                <div className="btn-menu">
                   <a href="/menu/ocffee" id="menu-navbar">
                     <img
                       alt="..."
@@ -80,12 +80,12 @@ function MenuPage() {
                     ></img>
                     <h1 style={{ color: "#00005A" }}>Coffee</h1>
                   </a>
-                </Button>
+                </div>
               </Col>
             </Row>
             <Row>
               <Col className="ml-auto mr-auto text-center">
-                <Button className="btn-menu">
+                <div className="btn-menu">
                   <a href="/menu/rice" id="menu-navbar">
                     <img
                       alt="..."
@@ -94,7 +94,7 @@ function MenuPage() {
                     ></img>
                     <h1 style={{ color: "#00005A" }}>Chicken Rice</h1>
                   </a>
-                </Button>
+                </div>
               </Col>
             </Row>
             <div className="separator separator-primary"></div>

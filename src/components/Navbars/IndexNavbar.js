@@ -22,7 +22,7 @@ import {
 
 function IndexNavbar() {
   const location = useLocation();
-  console.log(location.pathname);
+  // console.log(location.pathname);
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
   const [wordColor, setWordColor] = React.useState("#FDF502");
   const [logoDisplay, setLogoDisplay] = React.useState("hidden");
