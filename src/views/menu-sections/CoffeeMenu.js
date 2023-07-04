@@ -14,25 +14,24 @@ import {
 
 // core components
 
-import MenuPageHeader from "components/Headers/MenuPageHeader";
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import DarkFooter from "components/Footers/DarkFooter";
 import { connect, useSelector } from "react-redux";
 import TableComponent from "components/Widgets/TableComponent";
 import { useDispatch } from "react-redux";
-import { getRiceLists, getSandwichLists } from "../../actions/productAction";
+import { getSandwichLists } from "../../actions/productAction";
+import RiceHeader from "components/Headers/RiceHeader";
 
-function MenuPage() {
+
+function CoffeeMenu() {
   const dispatch = useDispatch();
   const data = useSelector((state) => state.sandwich); // Assuming 'counter' is a state property in Redux
-  const datas = useSelector((state) => state.rice); // Assuming 'counter' is a state property in Redux
-  console.log(datas);
+  console.log(data);
 
   const [firstFocus, setFirstFocus] = React.useState(false);
   const [lastFocus, setLastFocus] = React.useState(false);
   React.useEffect(() => {
     dispatch(getSandwichLists());
-    dispatch(getRiceLists());
     document.body.classList.add("landing-page");
     document.body.classList.add("sidebar-collapse");
     document.documentElement.classList.remove("nav-open");
@@ -47,7 +46,7 @@ function MenuPage() {
     <>
       <IndexNavbar />
       <div className="wrapper">
-        <MenuPageHeader />
+        <RiceHeader />
         <div
           style={{ backgroundColor: "#00005A" }}
           className="section section-about-us"
@@ -72,28 +71,24 @@ function MenuPage() {
               <Col md="2"></Col>
               <Col md="5">
                 <Button className="btn-menu">
-                  <a href="/menu/ocffee" id="menu-navbar">
-                    <img
-                      alt="..."
-                      style={{ height: "300px" }}
-                      src={require("assets/img/kopi1.png")}
-                    ></img>
-                    <h1 style={{ color: "#00005A" }}>Coffee</h1>
-                  </a>
+                  <img
+                    alt="..."
+                    style={{ height: "300px" }}
+                    src={require("assets/img/kopi1.png")}
+                  ></img>
+                  <h1>Coffee</h1>
                 </Button>
               </Col>
             </Row>
             <Row>
               <Col className="ml-auto mr-auto text-center">
                 <Button className="btn-menu">
-                  <a href="/menu/rice" id="menu-navbar">
-                    <img
-                      alt="..."
-                      style={{ height: "300px", width: "auto" }}
-                      src={require("assets/img/ricebowl1.png")}
-                    ></img>
-                    <h1 style={{ color: "#00005A" }}>Chicken Rice</h1>
-                  </a>
+                  <img
+                    alt="..."
+                    style={{ height: "300px", width: "auto" }}
+                    src={require("assets/img/ricebowl1.png")}
+                  ></img>
+                  <h1>Chicken Rice</h1>
                 </Button>
               </Col>
             </Row>
@@ -109,4 +104,4 @@ function MenuPage() {
   );
 }
 
-export default connect()(MenuPage);
+export default connect()(CoffeeMenu);

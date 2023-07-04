@@ -20,18 +20,18 @@ import DarkFooter from "components/Footers/DarkFooter";
 import { connect, useSelector } from "react-redux";
 import TableComponent from "components/Widgets/TableComponent";
 import { useDispatch } from "react-redux";
-import { getProductLists } from "../../actions/productAction";
-import users from "reducers/users";
+import { getSandwichLists } from "../../actions/productAction";
+
 
 function SandwichMenu() {
   const dispatch = useDispatch();
-  const data = useSelector((state) => state.users); // Assuming 'counter' is a state property in Redux
+  const data = useSelector((state) => state.sandwich); // Assuming 'counter' is a state property in Redux
   console.log(data);
 
   const [firstFocus, setFirstFocus] = React.useState(false);
   const [lastFocus, setLastFocus] = React.useState(false);
   React.useEffect(() => {
-    dispatch(getProductLists());
+    dispatch(getSandwichLists());
     document.body.classList.add("landing-page");
     document.body.classList.add("sidebar-collapse");
     document.documentElement.classList.remove("nav-open");
@@ -48,50 +48,54 @@ function SandwichMenu() {
       <div className="wrapper">
         <SandwichHeader />
         <div
-          style={{ backgroundColor: "#00005A" }}
           className="section section-about-us"
         >
           <Container>
             <Row className="ml-auto mr-auto text-center">
-              <Col md="5">
+              <Col md="4">
                 <Button
-                  // style={{width:"500px",height:"500px", backgroundColor:"#F0F08D"}}
-                  className="btn-menu"
+                  className="btn-menu-specific"
                 >
                   <a href="/menu/sandwich" id="menu-navbar">
                     <img
                       alt="..."
-                      style={{ height: "300px", width: "auto" }}
+                      
                       src={require("assets/img/sandwich2.png")}
                     ></img>
-                    <h1 style={{ color: "#00005A" }}>Sandwich</h1>
+                    <h1 style={{ color: "#00005A" }}>Sambal Matah</h1>
                   </a>
                 </Button>
               </Col>
-              <Col md="2"></Col>
-              <Col md="5">
-                <Button className="btn-menu">
-                  <img
-                    alt="..."
-                    style={{ height: "300px" }}
-                    src={require("assets/img/kopi1.png")}
-                  ></img>
-                  <h1>Coffee</h1>
+              <Col md="4">
+                <Button
+                  className="btn-menu-specific"
+                >
+                  <a href="/menu/sandwich" id="menu-navbar">
+                    <img
+                      alt="..."
+                      
+                      src={require("assets/img/sandwich2.png")}
+                    ></img>
+                    <h1 style={{ color: "#00005A" }}>Sambal Matah</h1>
+                  </a>
                 </Button>
               </Col>
-            </Row>
-            <Row>
-              <Col className="ml-auto mr-auto text-center">
-                <Button className="btn-menu">
-                  <img
-                    alt="..."
-                    style={{ height: "300px", width: "auto" }}
-                    src={require("assets/img/ricebowl1.png")}
-                  ></img>
-                  <h1>Chicken Rice</h1>
+              <Col md="4">
+                <Button
+                  className="btn-menu-specific"
+                >
+                  <a href="/menu/sandwich" id="menu-navbar">
+                    <img
+                      alt="..."
+                      
+                      src={require("assets/img/sandwich2.png")}
+                    ></img>
+                    <h1 style={{ color: "#00005A" }}>Barbeque</h1>
+                  </a>
                 </Button>
-              </Col>
+              </Col>            
             </Row>
+            
             <div className="separator separator-primary"></div>
 
             {/* <TableComponent /> */}

@@ -1,5 +1,6 @@
 // import {combineReducers} from 'redux';
-import usersReducer from './users';
+import sandwichReducer from './sandwichreducer';
+import riceReducer from './ricereducer';
 import { configureStore } from '@reduxjs/toolkit'
 
 
@@ -7,6 +8,7 @@ import { configureStore } from '@reduxjs/toolkit'
 export const store = configureStore({
     // Automatically calls `combineReducers`
     reducer: {
-      users: usersReducer   //get state from usersreducer
+      sandwich: sandwichReducer, //get state from usersreducer
+      rice: riceReducer   //get state from usersreducer
     }
   })
