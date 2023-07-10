@@ -30,7 +30,7 @@ import { getSandwichLists } from "../../actions/productAction";
 function SandwichMenu() {
   const [datsa, setData] = useState(null);
 
-  // const [pills, setPills] = React.useState("2");
+  const [pills, setPills] = React.useState("2");
   // const dispatch = useDispatch();
   // const data = useSelector((state) => state.sandwich); // Assuming 'counter' is a state property in Redux
   // const datas = data.getSandwichLists;
@@ -53,6 +53,11 @@ function SandwichMenu() {
     // dispatch(getSandwichLists());
    
   }, [datsa]);
+
+  if (!datsa) {
+    return null;
+  }
+  const datas = datsa.data
   
   return (
     <>
@@ -61,12 +66,12 @@ function SandwichMenu() {
         <SandwichHeader />
         <div className="section section-about-us">
           <Container>
-            {/* {Object.entries(datas[0]).map(([key, value]) => (
+            {/* {Object.entries(datsa.data[0]).map(([key, value]) => (
                 <p>
                 {key} : {value}
                 </p>
               ))} */}
-            {/* <Row className="ml-auto mr-auto text-center">
+            <Row className="ml-auto mr-auto text-center">
               {datas.map((item, index) => (
                 // {Object.entries(datas).map((item, index) => (
                 <Col md="4">
@@ -113,6 +118,7 @@ function SandwichMenu() {
                           <Col lg="6" md="12">
                             <h2 className="title">{item.product_name}</h2>
                             <h5>{item.description}</h5>
+                            <h5>Rp. {item.price},-</h5>
                             <Button
                               className="btn-round mr-1"
                               style={{ backgroundColor: "#00005A" }}
@@ -131,7 +137,7 @@ function SandwichMenu() {
                   </TabContent>
                 </Row>
               </div>
-            ))} */}
+            ))}
 
             {/* <div className="separator separator-primary"></div> */}
 
