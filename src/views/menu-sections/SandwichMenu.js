@@ -44,7 +44,7 @@ function SandwichMenu() {
         setData(datsa);
       
       } catch (error) {
-        console.log('Error fetching data:', error);
+        return (<div>Error {error} </div>);
       }
     };
     console.log(datsa);
@@ -55,7 +55,11 @@ function SandwichMenu() {
   }, [datsa]);
 
   if (!datsa) {
-    return null;
+    return (<>
+        <SandwichHeader />
+        <h1>Loading ...</h1>
+        </>
+    );
   }
   const datas = datsa.data
   

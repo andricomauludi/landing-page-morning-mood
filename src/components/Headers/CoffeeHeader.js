@@ -27,7 +27,7 @@ function CoffeeHeader() {
         <div
           className="page-header-image"
           style={{
-            backgroundImage: "url(" + require("assets/img/sandwich3.jpeg") + ")"
+            backgroundImage: "url(" + require("assets/img/header-kopi2.jpg") + ")"
           }}
           ref={pageHeader}
         ></div>
@@ -35,7 +35,7 @@ function CoffeeHeader() {
           <Container>
             <h1
             style={{color:"#FDF502", fontSize:"100px", alignItems:"center"}}
-            className="title">Sandwiches</h1>
+            className="title">Coffee</h1>
             <div className="text-center">            
             </div>
           </Container>

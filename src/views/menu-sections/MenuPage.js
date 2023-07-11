@@ -72,7 +72,7 @@ function MenuPage() {
               <Col md="2"></Col>
               <Col md="5">
                 <div className="btn-menu">
-                  <a href="/menu/ocffee" id="menu-navbar">
+                  <a href="/menu/coffee" id="menu-navbar">
                     <img
                       alt="..."
                       style={{ height: "300px" }}
